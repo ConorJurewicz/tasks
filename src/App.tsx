@@ -13,8 +13,26 @@ function App(): JSX.Element {
                 <div>
                     <Container>
                         <Row>
-                            <Col>Left</Col>
-                            <Col>Right</Col>
+                            <Col>
+                                <div
+                                    style={{
+                                        width: "200px",
+                                        height: "100px",
+                                        backgroundColor: "red"
+                                    }}
+                                >
+                                    <Col>Left</Col>
+                                </div>
+                            </Col>
+                            <div
+                                style={{
+                                    width: "200px",
+                                    height: "100px",
+                                    backgroundColor: "red"
+                                }}
+                            >
+                                <Col>Right</Col>
+                            </div>
                         </Row>
                     </Container>
                 </div>
@@ -26,19 +44,17 @@ function App(): JSX.Element {
                     <p>Pink!</p>
                 </div>
                 <div>
-                    <Button onClick={() => console.log("I was clicked.")}>
-                        BREAK ME!
+                    <Button onClick={() => console.log("Hello World!")}>
+                        Log Hello World
                     </Button>
                 </div>
             </div>
             <div>
                 <ul>
-                    <li>Bullet</li>
+                    <li>Bullet 1</li>
+                    <li>Bullet 2</li>
+                    <li>Bullet 3</li>
                 </ul>
-                <></>
-                <ol>
-                    <li>Numbers</li>
-                </ol>
                 This is <span style={{ color: "pink" }}> colored text</span>
             </div>
             <img
