@@ -13,15 +13,9 @@ export function fahrenheitToCelius(temperature: number): number {
  */
 export function add3(first: number, second: number, third: number): number {
     let SUM: number = 0;
-    if (first > 0) {
-        SUM += first;
-    }
-    if (second > 0) {
-        SUM += second;
-    }
-    if (third > 0) {
-        SUM += third;
-    }
+    SUM += first > 0 ? first : 0;
+    SUM += second > 0 ? second : 0;
+    SUM += third > 0 ? third : 0;
     return SUM;
 }
 
@@ -38,10 +32,7 @@ export function shout(message: string): string {
  * mark. Do not use an `if` statement in solving this question.
  */
 export function isQuestion(message: string): boolean {
-    let t_or_f: boolean = false;
-    const lastIndex: number = message.length - 1;
-    message[lastIndex] == "?" ? (t_or_f = true) : (t_or_f = false);
-    return t_or_f;
+    return message.slice(-1) === "?";
 }
 
 /**
