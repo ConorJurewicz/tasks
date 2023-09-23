@@ -45,6 +45,6 @@ export function convertYesNo(word: string): boolean | null {
         return null;
     }
     let t_or_f = false;
-    word.toLowerCase() == "yes" ? (t_or_f = true) : (t_or_f = false);
+    t_or_f = word.toLowerCase() === "yes";
     return t_or_f;
 }
