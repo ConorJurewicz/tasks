@@ -12,7 +12,7 @@ export function fahrenheitToCelius(temperature: number): number {
  * if the number is greater than zero.
  */
 export function add3(first: number, second: number, third: number): number {
-    let SUM: number = 0;
+    let SUM = 0;
     SUM += first > 0 ? first : 0;
     SUM += second > 0 ? second : 0;
     SUM += third > 0 ? third : 0;
@@ -44,7 +44,7 @@ export function convertYesNo(word: string): boolean | null {
     if (word.toLowerCase() != "no" && word.toLowerCase() != "yes") {
         return null;
     }
-    let t_or_f: boolean = false;
+    let t_or_f = false;
     word.toLowerCase() == "yes" ? (t_or_f = true) : (t_or_f = false);
     return t_or_f;
 }
